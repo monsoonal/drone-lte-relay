@@ -65,7 +65,7 @@ class TCP_Relay {
 
 $drone_address  = '10.1.1.10';
 $server_address = gethostbyname( '192.168.1.15' );
-$video_steam    = new TCP_Relay( $drone_address, 5555, $server_address, 5555 );
+$video_steam    = new TCP_Relay( $drone_address, 6789, $server_address, 22 );
 
 while( 1 ) {
 	$video_steam->process();
