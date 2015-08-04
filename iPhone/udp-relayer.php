@@ -79,8 +79,8 @@ class UDP_Relay {
 	}
 }
 
-$drone_ip       = '10.1.1.10';
-$server_ip      = gethostbyname( '192.168.1.15' );
+$drone_ip       = '192.168.0.99';
+$server_ip      = gethostbyname( '192.168.0.104' );
 $at_data_relay  = new UDP_Relay( $drone_ip, 6789, $server_ip, 22 );
 //$nav_data_relay = new UDP_Relay( $drone_ip, 5554, $server_ip, 5554 );
 
