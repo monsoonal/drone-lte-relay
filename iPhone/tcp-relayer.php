@@ -63,7 +63,7 @@ class TCP_Relay {
 	}
 }
 
-$drone_address  = '192.168.0.99';
+$drone_address  = '192.168.0.100';
 $server_address = gethostbyname( '192.168.0.104' );
 $video_steam    = new TCP_Relay( $drone_address, 6789, $server_address, 22 );
 
