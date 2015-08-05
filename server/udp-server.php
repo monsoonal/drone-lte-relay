@@ -64,7 +64,7 @@ class UDP_Server {
 
 }
 
-$at_data_server  = new UDP_Server( '0.0.0.0', 22 );
+$at_data_server  = new UDP_Server( '0.0.0.0', 6789 );
 //$nav_data_server = new UDP_Server( '0.0.0.0', 5554 );
 $at_data_server->set_debug( true );
 
