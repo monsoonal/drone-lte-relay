@@ -79,9 +79,9 @@ class UDP_Relay {
 	}
 }
 
-$drone_ip       = '192.168.0.99';
-$server_ip      = gethostbyaddr( '192.168.0.102' );
-$at_data_relay  = new UDP_Relay( $drone_ip, 5560, $server_ip, 5560 );
+$drone_ip       = '192.168.1.1';
+$server_ip      = gethostbyname( 'poetpendulum.com' );
+$at_data_relay  = new UDP_Relay( $drone_ip, 5556, $server_ip, 5556 );
 //$nav_data_relay = new UDP_Relay( $drone_ip, 5554, $server_ip, 5554 );
 
 $at_data_relay->set_debug( true );
