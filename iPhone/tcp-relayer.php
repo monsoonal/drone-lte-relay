@@ -64,7 +64,7 @@ class TCP_Relay {
 }
 
 $drone_address  = '192.168.1.1';
-$server_address = gethostbyname( 'ssh.poetpendulum.com' );
+$server_address = gethostbyname( 'poetpendulum.com' );
 $video_steam    = new TCP_Relay( $drone_address, 5555, $server_address, 5555 );
 
 while( 1 ) {
